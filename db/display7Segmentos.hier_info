@@ -1,4 +1,63 @@
-|somador1Bit
+|somador4Bits
+pin_name5 <= somador1Bit:inst.R
+A0 => somador1Bit:inst.A
+pin_name6 <= somador1Bit:inst1.R
+A1 => somador1Bit:inst1.A
+pin_name10 <= somador1Bit:inst2.R
+A2 => somador1Bit:inst2.A
+pin_name11 <= somador1Bit:inst3.R
+A3 => somador1Bit:inst3.A
+Cout <= somador1Bit:inst3.Cout
+B1 => ~NO_FANOUT~
+B2 => ~NO_FANOUT~
+B3 => ~NO_FANOUT~
+SELEC => ~NO_FANOUT~
+B0 => ~NO_FANOUT~
+
+
+|somador4Bits|somador1Bit:inst
+R <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst4.IN0
+A => inst2.IN0
+B => inst3.IN0
+B => inst5.IN0
+B => inst2.IN1
+Cin => inst3.IN1
+Cin => inst5.IN1
+Cin => inst4.IN1
+Cout <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somador4Bits|somador1Bit:inst1
+R <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst4.IN0
+A => inst2.IN0
+B => inst3.IN0
+B => inst5.IN0
+B => inst2.IN1
+Cin => inst3.IN1
+Cin => inst5.IN1
+Cin => inst4.IN1
+Cout <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somador4Bits|somador1Bit:inst2
+R <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst4.IN0
+A => inst2.IN0
+B => inst3.IN0
+B => inst5.IN0
+B => inst2.IN1
+Cin => inst3.IN1
+Cin => inst5.IN1
+Cin => inst4.IN1
+Cout <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somador4Bits|somador1Bit:inst3
 R <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst4.IN0

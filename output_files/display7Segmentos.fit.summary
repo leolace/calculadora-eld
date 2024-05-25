@@ -1,11 +1,11 @@
-Fitter Status : Successful - Sat May 25 19:15:36 2024
+Fitter Status : Successful - Sat May 25 19:44:42 2024
 Quartus Prime Version : 23.1std.0 Build 991 11/28/2023 SC Standard Edition
 Revision Name : display7Segmentos
 Top-level Entity Name : somador4Bits
 Family : Cyclone V
 Device : 5CEBA4F23C7
 Timing Models : Final
-Logic utilization (in ALMs) : 1 / 18,480 ( < 1 % )
+Logic utilization (in ALMs) : 5 / 18,480 ( < 1 % )
 Total registers : 0
 Total pins : 14 / 224 ( 6 % )
 Total virtual pins : 0

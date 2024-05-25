@@ -1,5 +1,5 @@
 Assembler report for display7Segmentos
-Sat May 25 19:15:39 2024
+Sat May 25 19:44:49 2024
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Standard Edition
 
 
@@ -36,7 +36,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sat May 25 19:15:39 2024 ;
+; Assembler Status      ; Successful - Sat May 25 19:44:49 2024 ;
 ; Revision Name         ; display7Segmentos                     ;
 ; Top-level Entity Name ; somador4Bits                          ;
 ; Family                ; Cyclone V                             ;
@@ -57,13 +57,13 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 23.1std.0 Build 991 11/28/2023 SC Standard Edition
-    Info: Processing started: Sat May 25 19:15:39 2024
+    Info: Processing started: Sat May 25 19:44:49 2024
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off calculadora -c display7Segmentos
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Warning (292011): Can't generate programming files because you are currently using the Quartus Prime software in Evaluation Mode.
 Info: Quartus Prime Assembler was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 4738 megabytes
-    Info: Processing ended: Sat May 25 19:15:39 2024
+    Info: Processing ended: Sat May 25 19:44:49 2024
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 

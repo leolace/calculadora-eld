@@ -1,18 +1,22 @@
 |somador4Bits
 pin_name5 <= somador1Bit:inst.R
 A0 => somador1Bit:inst.A
+SELEC => inst4.IN0
+SELEC => somador1Bit:inst.Cin
+SELEC => inst5.IN0
+SELEC => inst6.IN0
+SELEC => inst7.IN0
+B0 => inst4.IN1
 pin_name6 <= somador1Bit:inst1.R
 A1 => somador1Bit:inst1.A
+B1 => inst5.IN1
 pin_name10 <= somador1Bit:inst2.R
 A2 => somador1Bit:inst2.A
+B2 => inst6.IN1
 pin_name11 <= somador1Bit:inst3.R
 A3 => somador1Bit:inst3.A
+B3 => inst7.IN1
 Cout <= somador1Bit:inst3.Cout
-B1 => ~NO_FANOUT~
-B2 => ~NO_FANOUT~
-B3 => ~NO_FANOUT~
-SELEC => ~NO_FANOUT~
-B0 => ~NO_FANOUT~
 
 
 |somador4Bits|somador1Bit:inst

@@ -46,19 +46,19 @@ r1
 !s85 0
 31
 R7
-!s107 Waveform.vwf.vt|
-Z15 !s90 -work|work|Waveform.vwf.vt|
+Z15 !s107 Waveform.vwf.vt|
+Z16 !s90 -work|work|Waveform.vwf.vt|
 !i113 1
 R10
 R11
 ndisplay7@segmentos_vlg_vec_tst
 vsomador1Bit
-Z16 !s110 1716335143
+Z17 !s110 1716335143
 !i10b 1
 !s100 OkX2eEk4n6eSU_P9]j^8h0
 Il3TO_ei3dlcU>aSnhNVc>3
 R2
-Z17 dC:/Users/15648400/Desktop/Projetos_20-05/calculadora/simulation/qsim
+Z18 dC:/Users/15648400/Desktop/Projetos_20-05/calculadora/simulation/qsim
 w1716335140
 R3
 R4
@@ -75,12 +75,12 @@ R10
 R11
 nsomador1@bit
 vsomador1Bit_vlg_vec_tst
-R16
+R17
 !i10b 1
 !s100 3Cf=l]_53n7AY^`SV`7SD2
 ImOKlDN@@@GOY4c3OFMBi]2
 R2
-R17
+R18
 w1716335139
 R12
 R13
@@ -90,9 +90,97 @@ r1
 !s85 0
 31
 !s108 1716335143.000000
-!s107 Waveform.vwf.vt|
 R15
+R16
 !i113 1
 R10
 R11
 nsomador1@bit_vlg_vec_tst
+Esomador4bits
+Z19 w1716856240
+Z20 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z21 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 CX9c^[CNfbzHb3XCH3hoa1
+Z22 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z23 DPx8 cyclonev 19 cyclonev_components 0 22 NZ_cKj>1HW_D7i1UeTO[31
+Z24 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z25 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z26 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 6`GHcm:DR>=X_840X1FV;0
+Z27 dC:/Users/TEMP/Desktop/calculadora-eld/simulation/qsim
+Z28 8display7Segmentos.vho
+Z29 Fdisplay7Segmentos.vho
+l0
+L37
+VdF5C1Dz^2jPXB2kL24L6O0
+!s100 Pc<Eh?;8:ZeAAhVd?Q<Wh1
+Z30 OV;C;10.5b;63
+32
+Z31 !s110 1716856241
+!i10b 1
+Z32 !s108 1716856241.000000
+Z33 !s90 -work|work|display7Segmentos.vho|
+Z34 !s107 display7Segmentos.vho|
+!i113 1
+R10
+Z35 tExplicit 1 CvgOpt 0
+Astructure
+R20
+R21
+R22
+R23
+R24
+R25
+R26
+DEx4 work 12 somador4bits 0 22 dF5C1Dz^2jPXB2kL24L6O0
+l160
+L83
+V971hIfKd15Lei>3TUT@IP1
+!s100 NR[Jk_znX4c^^F=e8AN1d3
+R30
+32
+R31
+!i10b 1
+R32
+R33
+R34
+!i113 1
+R10
+R35
+Esomador4bits_vhd_vec_tst
+Z36 w1716856239
+R24
+R25
+R27
+Z37 8SIMULACAO.vwf.vht
+Z38 FSIMULACAO.vwf.vht
+l0
+L32
+VbOB[iFAbKB_;daU;Bn3E[0
+!s100 `B9IL0UWcDO[N?lol>B3C2
+R30
+32
+R31
+!i10b 1
+R32
+Z39 !s90 -work|work|SIMULACAO.vwf.vht|
+Z40 !s107 SIMULACAO.vwf.vht|
+!i113 1
+R10
+R35
+Asomador4bits_arch
+R24
+R25
+Z41 DEx4 work 24 somador4bits_vhd_vec_tst 0 22 bOB[iFAbKB_;daU;Bn3E[0
+l79
+L34
+VM@?g<HUVLQV@[8;Hgf=VJ1
+!s100 ]Bn<jOG?XgZJZWiKTR3UI1
+R30
+32
+R31
+!i10b 1
+R32
+R39
+R40
+!i113 1
+R10
+R35

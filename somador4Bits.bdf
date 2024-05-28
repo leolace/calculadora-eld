@@ -189,6 +189,7 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 312 256 384 280))
 )
 (pin
 	(input)
@@ -796,10 +797,6 @@ https://fpgasoftware.intel.com/eula.
 	(pt 552 248)
 )
 (connector
-	(pt 688 720)
-	(pt 328 720)
-)
-(connector
 	(pt 320 944)
 	(pt 320 928)
 )
@@ -821,15 +818,7 @@ https://fpgasoftware.intel.com/eula.
 )
 (connector
 	(pt 808 712)
-	(pt 808 488)
-)
-(connector
-	(pt 808 712)
 	(pt 816 712)
-)
-(connector
-	(pt 832 712)
-	(pt 832 352)
 )
 (connector
 	(pt 856 712)
@@ -841,9 +830,21 @@ https://fpgasoftware.intel.com/eula.
 )
 (connector
 	(pt 792 712)
-	(pt 792 624)
+	(pt 800 712)
 )
 (connector
+	(pt 328 720)
+	(pt 688 720)
+)
+(connector
+	(pt 792 624)
 	(pt 792 712)
-	(pt 800 712)
+)
+(connector
+	(pt 808 488)
+	(pt 808 712)
+)
+(connector
+	(pt 832 352)
+	(pt 832 712)
 )

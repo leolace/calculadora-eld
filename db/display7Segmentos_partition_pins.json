@@ -4,43 +4,51 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "pin_name5",
+					"name" : "SINAL",
 					"strict" : false
 				},
 				{
-					"name" : "pin_name6",
+					"name" : "pin_name2",
 					"strict" : false
 				},
 				{
-					"name" : "pin_name10",
+					"name" : "SegA",
 					"strict" : false
 				},
 				{
-					"name" : "pin_name11",
+					"name" : "SegB",
 					"strict" : false
 				},
 				{
-					"name" : "Cout",
+					"name" : "SegC",
 					"strict" : false
 				},
 				{
-					"name" : "A0",
+					"name" : "SegD",
 					"strict" : false
 				},
 				{
-					"name" : "B0",
+					"name" : "SegE",
 					"strict" : false
 				},
 				{
-					"name" : "A1",
+					"name" : "SegF",
 					"strict" : false
 				},
 				{
-					"name" : "SELEC",
+					"name" : "SegG",
 					"strict" : false
 				},
 				{
-					"name" : "B1",
+					"name" : "Cin1",
+					"strict" : false
+				},
+				{
+					"name" : "A3",
+					"strict" : false
+				},
+				{
+					"name" : "B3",
 					"strict" : false
 				},
 				{
@@ -52,11 +60,27 @@
 					"strict" : false
 				},
 				{
-					"name" : "A3",
+					"name" : "A1",
 					"strict" : false
 				},
 				{
-					"name" : "B3",
+					"name" : "B1",
+					"strict" : false
+				},
+				{
+					"name" : "A0",
+					"strict" : false
+				},
+				{
+					"name" : "zero",
+					"strict" : false
+				},
+				{
+					"name" : "B0",
+					"strict" : false
+				},
+				{
+					"name" : "pin_name1",
 					"strict" : false
 				}
 			]

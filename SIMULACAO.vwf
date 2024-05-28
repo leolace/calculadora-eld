@@ -1,16 +1,16 @@
 /*<simulation_settings>
-<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off calculadora -c display7Segmentos --vector_source="D:/Documents/Projeto-ELD/calculadora/Waveform1.vwf" --testbench_file="D:/Documents/Projeto-ELD/calculadora/simulation/qsim/Waveform1.vwf.vt"</ftestbench_cmd>
-<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off calculadora -c display7Segmentos --vector_source="D:/Documents/Projeto-ELD/calculadora/Waveform1.vwf" --testbench_file="D:/Documents/Projeto-ELD/calculadora/simulation/qsim/Waveform1.vwf.vt"</ttestbench_cmd>
-<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="D:/Documents/Projeto-ELD/calculadora/simulation/qsim/" calculadora -c display7Segmentos</fnetlist_cmd>
-<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="D:/Documents/Projeto-ELD/calculadora/simulation/qsim/" calculadora -c display7Segmentos</tnetlist_cmd>
+<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off calculadora -c display7Segmentos --vector_source="C:/Users/TEMP/Desktop/calculadora-eld/SIMULACAO.vwf" --testbench_file="C:/Users/TEMP/Desktop/calculadora-eld/simulation/qsim/SIMULACAO.vwf.vht"</ftestbench_cmd>
+<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off calculadora -c display7Segmentos --vector_source="C:/Users/TEMP/Desktop/calculadora-eld/SIMULACAO.vwf" --testbench_file="C:/Users/TEMP/Desktop/calculadora-eld/simulation/qsim/SIMULACAO.vwf.vht"</ttestbench_cmd>
+<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/TEMP/Desktop/calculadora-eld/simulation/qsim/" calculadora -c display7Segmentos</fnetlist_cmd>
+<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/TEMP/Desktop/calculadora-eld/simulation/qsim/" calculadora -c display7Segmentos</tnetlist_cmd>
 <modelsim_script>onerror {exit -code 1}
 vlib work
-vlog -work work display7Segmentos.vo
-vlog -work work Waveform1.vwf.vt
-vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.somador4Bits_vlg_vec_tst
+vcom -work work display7Segmentos.vho
+vcom -work work SIMULACAO.vwf.vht
+vsim -novopt -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.somador4Bits_vhd_vec_tst
 vcd file -direction calculadora.msim.vcd
-vcd add -internal somador4Bits_vlg_vec_tst/*
-vcd add -internal somador4Bits_vlg_vec_tst/i1/*
+vcd add -internal somador4Bits_vhd_vec_tst/*
+vcd add -internal somador4Bits_vhd_vec_tst/i1/*
 proc simTimestamp {} {
     echo "Simulation time: $::now ps"
     if { [string equal running [runStatus]] } {
@@ -20,15 +20,16 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
 </modelsim_script>
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
-vlog -work work display7Segmentos.vo
-vlog -work work Waveform1.vwf.vt
-vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.somador4Bits_vlg_vec_tst
+vcom -work work display7Segmentos.vho
+vcom -work work SIMULACAO.vwf.vht
+vsim -novopt -c -t 1ps -sdfmax somador4Bits_vhd_vec_tst/i1=display7Segmentos_vhd.sdo -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.somador4Bits_vhd_vec_tst
 vcd file -direction calculadora.msim.vcd
-vcd add -internal somador4Bits_vlg_vec_tst/*
-vcd add -internal somador4Bits_vlg_vec_tst/i1/*
+vcd add -internal somador4Bits_vhd_vec_tst/*
+vcd add -internal somador4Bits_vhd_vec_tst/i1/*
 proc simTimestamp {} {
     echo "Simulation time: $::now ps"
     if { [string equal running [runStatus]] } {
@@ -38,8 +39,9 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
 </modelsim_script_timing>
-<hdl_lang>verilog</hdl_lang>
+<hdl_lang>vhdl</hdl_lang>
 </simulation_settings>*/
 /*
 WARNING: Do NOT edit the input and output ports in this file in a text
@@ -48,7 +50,7 @@ the Block Editor! File corruption is VERY likely to occur.
 */
 
 /*
-Copyright (C) 2023  Intel Corporation. All rights reserved.
+Copyright (C) 2021  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -156,6 +158,16 @@ SIGNAL("B3")
 	PARENT = "";
 }
 
+SIGNAL("SELEC")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
 SIGNAL("Cout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -166,7 +178,7 @@ SIGNAL("Cout")
 	PARENT = "";
 }
 
-SIGNAL("pin_name5")
+SIGNAL("pin_name1")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -176,43 +188,83 @@ SIGNAL("pin_name5")
 	PARENT = "";
 }
 
-SIGNAL("pin_name6")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("pin_name10")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("pin_name11")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("SELEC")
+SIGNAL("pin_name2")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("SegA")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("SegB")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("SegC")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("SegD")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("SegE")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("SegF")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("SegG")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
 	PARENT = "";
 }
 
@@ -328,7 +380,7 @@ TRANSITION_LIST("B3")
 	}
 }
 
-TRANSITION_LIST("Cout")
+TRANSITION_LIST("SELEC")
 {
 	NODE
 	{
@@ -342,52 +394,93 @@ TRANSITION_LIST("Cout")
 	}
 }
 
-TRANSITION_LIST("pin_name5")
+TRANSITION_LIST("Cout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 15001.0;
+		LEVEL X FOR 16000.0;
 	}
 }
 
-TRANSITION_LIST("pin_name6")
+TRANSITION_LIST("pin_name1")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 15001.0;
+		LEVEL X FOR 16000.0;
 	}
 }
 
-TRANSITION_LIST("pin_name10")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 15001.0;
-	}
-}
-
-TRANSITION_LIST("pin_name11")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 15001.0;
-	}
-}
-
-TRANSITION_LIST("SELEC")
+TRANSITION_LIST("pin_name2")
 {
 	NODE
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 16000.0;
+	}
+}
+
+TRANSITION_LIST("SegA")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 16000.0;
+	}
+}
+
+TRANSITION_LIST("SegB")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 16000.0;
+	}
+}
+
+TRANSITION_LIST("SegC")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 16000.0;
+	}
+}
+
+TRANSITION_LIST("SegD")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 16000.0;
+	}
+}
+
+TRANSITION_LIST("SegE")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 16000.0;
+	}
+}
+
+TRANSITION_LIST("SegF")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 16000.0;
+	}
+}
+
+TRANSITION_LIST("SegG")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 16000.0;
 	}
 }
 
@@ -465,7 +558,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Cout";
+	CHANNEL = "SELEC";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 8;
@@ -474,7 +567,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "pin_name5";
+	CHANNEL = "Cout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 9;
@@ -483,7 +576,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "pin_name6";
+	CHANNEL = "pin_name1";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 10;
@@ -492,7 +585,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "pin_name10";
+	CHANNEL = "pin_name2";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 11;
@@ -501,7 +594,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "pin_name11";
+	CHANNEL = "SegA";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 12;
@@ -510,10 +603,55 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SELEC";
+	CHANNEL = "SegB";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 13;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "SegC";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 14;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "SegD";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 15;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "SegE";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 16;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "SegF";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 17;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "SegG";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 18;
 	TREE_LEVEL = 0;
 }
 

@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(5CEBA4F23) Path("C:/Users/TEMP/Desktop/calculadora-eld/output_files/") File("display7Segmentos.sof") MfrSpec(OpMask(1));
+		Device PartName(5CEBA4F23) Path("C:/Users/15657074/Documents/calculadora-eld/output_files/") File("display7Segmentos.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

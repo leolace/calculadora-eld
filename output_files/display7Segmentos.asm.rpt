@@ -1,5 +1,5 @@
 Assembler report for display7Segmentos
-Mon May 27 22:58:34 2024
+Mon Jun  3 22:31:58 2024
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -10,8 +10,8 @@ Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/TEMP/Desktop/calculadora-eld/output_files/display7Segmentos.sof
-  6. Assembler Device Options: C:/Users/TEMP/Desktop/calculadora-eld/output_files/display7Segmentos.pof
+  5. Assembler Device Options: C:/Users/15657074/Documents/calculadora-eld/output_files/display7Segmentos.sof
+  6. Assembler Device Options: C:/Users/15657074/Documents/calculadora-eld/output_files/display7Segmentos.pof
   7. Assembler Messages
 
 
@@ -39,7 +39,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon May 27 22:58:34 2024 ;
+; Assembler Status      ; Successful - Mon Jun  3 22:31:58 2024 ;
 ; Revision Name         ; display7Segmentos                     ;
 ; Top-level Entity Name ; somador4Bits                          ;
 ; Family                ; Cyclone V                             ;
@@ -54,35 +54,35 @@ https://fpgasoftware.intel.com/eula.
 +--------+---------+---------------+
 
 
-+--------------------------------------------------------------------------+
-; Assembler Generated Files                                                ;
-+--------------------------------------------------------------------------+
-; File Name                                                                ;
-+--------------------------------------------------------------------------+
-; C:/Users/TEMP/Desktop/calculadora-eld/output_files/display7Segmentos.sof ;
-; C:/Users/TEMP/Desktop/calculadora-eld/output_files/display7Segmentos.pof ;
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------+
+; Assembler Generated Files                                                      ;
++--------------------------------------------------------------------------------+
+; File Name                                                                      ;
++--------------------------------------------------------------------------------+
+; C:/Users/15657074/Documents/calculadora-eld/output_files/display7Segmentos.sof ;
+; C:/Users/15657074/Documents/calculadora-eld/output_files/display7Segmentos.pof ;
++--------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/TEMP/Desktop/calculadora-eld/output_files/display7Segmentos.sof ;
-+----------------+-----------------------------------------------------------------------------------+
-; Option         ; Setting                                                                           ;
-+----------------+-----------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x004E2456                                                                        ;
-; Checksum       ; 0x004E2456                                                                        ;
-+----------------+-----------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/15657074/Documents/calculadora-eld/output_files/display7Segmentos.sof ;
++----------------+-----------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                 ;
++----------------+-----------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x004E2DC3                                                                              ;
+; Checksum       ; 0x004E2DC3                                                                              ;
++----------------+-----------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/TEMP/Desktop/calculadora-eld/output_files/display7Segmentos.pof ;
-+--------------------+-------------------------------------------------------------------------------+
-; Option             ; Setting                                                                       ;
-+--------------------+-------------------------------------------------------------------------------+
-; JTAG usercode      ; 0x00000000                                                                    ;
-; Checksum           ; 0x15161B6A                                                                    ;
-; Compression Ratio  ; 3                                                                             ;
-+--------------------+-------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/15657074/Documents/calculadora-eld/output_files/display7Segmentos.pof ;
++--------------------+-------------------------------------------------------------------------------------+
+; Option             ; Setting                                                                             ;
++--------------------+-------------------------------------------------------------------------------------+
+; JTAG usercode      ; 0x00000000                                                                          ;
+; Checksum           ; 0x1516FE6B                                                                          ;
+; Compression Ratio  ; 3                                                                                   ;
++--------------------+-------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -91,13 +91,13 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Mon May 27 22:58:30 2024
+    Info: Processing started: Mon Jun  3 22:31:54 2024
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off calculadora -c display7Segmentos
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4850 megabytes
-    Info: Processing ended: Mon May 27 22:58:34 2024
+    Info: Peak virtual memory: 4843 megabytes
+    Info: Processing ended: Mon Jun  3 22:31:58 2024
     Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:04
 

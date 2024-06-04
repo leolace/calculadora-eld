@@ -79,7 +79,6 @@ set_location_assignment PIN_T12 -to B0
 set_location_assignment PIN_T13 -to B1
 set_location_assignment PIN_V13 -to B2
 set_location_assignment PIN_U13 -to B3
-set_location_assignment PIN_AB13 -to Cin1
 set_location_assignment PIN_P9 -to SINAL
 set_location_assignment PIN_U21 -to SegA
 set_location_assignment PIN_V21 -to SegB
@@ -90,4 +89,14 @@ set_location_assignment PIN_Y21 -to SegF
 set_location_assignment PIN_AA22 -to SegG
 set_location_assignment PIN_Y17 -to pin_name2
 set_location_assignment PIN_AB12 -to zero
+set_location_assignment PIN_AA20 -to SEGA2
+set_location_assignment PIN_AB20 -to SEGB2
+set_location_assignment PIN_AA19 -to SEGC2
+set_location_assignment PIN_AA18 -to SEGD2
+set_location_assignment PIN_AB18 -to SEGE2
+set_location_assignment PIN_AA17 -to SEGF2
+set_location_assignment PIN_U22 -to SegG2
+set_global_assignment -name QIP_FILE Mux4p1.qip
+set_location_assignment PIN_AB21 -to SIGN
+set_location_assignment PIN_AB13 -to CTR
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

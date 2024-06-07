@@ -16,13 +16,13 @@
 
 FUNCTION Mux4p1 
 (
-	data0x[3..0],
-	data1x[3..0],
-	data2x[3..0],
-	data3x[3..0],
+	data0,
+	data1,
+	data2,
+	data3,
 	sel[1..0]
 )
 
 RETURNS (
-	result[3..0]
+	result
 );

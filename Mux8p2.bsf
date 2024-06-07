@@ -1,0 +1,111 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2021  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 56 56 160 400)
+	(text "Mux8p2" (rect 26 8 80 24)(font "Arial" (font_size 10)))
+	(text "inst" (rect 16 168 33 180)(font "Arial" ))
+	(port
+		(pt 0 24)
+		(input)
+		(text "data7" (rect 0 8 31 22)(font "Arial" (font_size 8)))
+		(text "data7" (rect 4 10 35 24)(font "Arial" (font_size 8)))
+		(line (pt 0 24)(pt 32 24))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "data6" (rect 0 8 31 22)(font "Arial" (font_size 8)))
+		(text "data6" (rect 4 50 35 64)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 32 64))
+	)
+	(port
+		(pt 0 104)
+		(input)
+		(text "data5" (rect 0 8 31 22)(font "Arial" (font_size 8)))
+		(text "data5" (rect 4 90 35 104)(font "Arial" (font_size 8)))
+		(line (pt 0 104)(pt 32 104))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "data4" (rect 0 8 31 22)(font "Arial" (font_size 8)))
+		(text "data4" (rect 4 130 35 144)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 32 144))
+	)
+	(port
+		(pt 0 184)
+		(input)
+		(text "data3" (rect 0 8 31 22)(font "Arial" (font_size 8)))
+		(text "data3" (rect 4 170 35 184)(font "Arial" (font_size 8)))
+		(line (pt 0 184)(pt 32 184))
+	)
+	(port
+		(pt 0 232)
+		(input)
+		(text "data2" (rect 0 8 31 22)(font "Arial" (font_size 8)))
+		(text "data2" (rect 4 218 35 232)(font "Arial" (font_size 8)))
+		(line (pt 0 232)(pt 32 232))
+	)
+	(port
+		(pt 0 272)
+		(input)
+		(text "data1" (rect 0 8 31 22)(font "Arial" (font_size 8)))
+		(text "data1" (rect 4 258 35 272)(font "Arial" (font_size 8)))
+		(line (pt 0 272)(pt 32 272))
+	)
+	(port
+		(pt 0 312)
+		(input)
+		(text "data0" (rect 0 8 31 22)(font "Arial" (font_size 8)))
+		(text "data0" (rect 4 298 35 312)(font "Arial" (font_size 8)))
+		(line (pt 0 312)(pt 32 312))
+	)
+	(port
+		(pt 48 344)
+		(input)
+		(text "sel[2..0]" (rect 8 168 22 212)(font "Arial" (font_size 8))(vertical))
+		(text "sel[2..0]" (rect 41 291 55 335)(font "Arial" (font_size 8))(vertical))
+		(line (pt 48 344)(pt 48 332)(line_width 3))
+	)
+	(port
+		(pt 104 160)
+		(output)
+		(text "result" (rect 24 8 55 22)(font "Arial" (font_size 8)))
+		(text "result" (rect 72 144 103 158)(font "Arial" (font_size 8)))
+		(line (pt 104 160)(pt 72 160))
+	)
+	(drawing
+		(line (pt 40 32)(pt 40 176))
+		(line (pt 40 32)(pt 56 40))
+		(line (pt 40 176)(pt 56 168))
+		(line (pt 56 40)(pt 56 168))
+		(line (pt 8 8)(pt 90 8))
+		(line (pt 8 336)(pt 90 336))
+		(line (pt 8 8)(pt 8 8))
+		(line (pt 8 8)(pt 8 8))
+		(line (pt 8 8)(pt 8 8))
+		(line (pt 8 8)(pt 8 8))
+		(line (pt 8 8)(pt 8 336))
+		(line (pt 90 8)(pt 91 338))
+	)
+)

@@ -139,7 +139,7 @@ RESERVED_INPUT               : AB17      :        :                   :         
 SEGE2                        : AB18      : output : 2.5 V             :         : 4A        : Y              
 GND                          : AB19      : gnd    :                   :         :           :                
 SEGB2                        : AB20      : output : 2.5 V             :         : 4A        : Y              
-SIGN                         : AB21      : output : 2.5 V             :         : 4A        : Y              
+RESERVED_INPUT               : AB21      :        :                   :         : 4A        :                
 RESERVED_INPUT               : AB22      :        :                   :         : 4A        :                
 GND                          : B1        : gnd    :                   :         :           :                
 GND                          : B2        : gnd    :                   :         :           :                
@@ -413,7 +413,7 @@ TMS                          : P5        : input  :                   :         
 RESERVED_INPUT               : P6        :        :                   :         : 3A        :                
 RESERVED_INPUT               : P7        :        :                   :         : 3A        :                
 RESERVED_INPUT               : P8        :        :                   :         : 3B        :                
-RESERVED_INPUT               : P9        :        :                   :         : 3B        :                
+SINAL                        : P9        : output : 2.5 V             :         : 3B        : Y              
 GND                          : P10       : gnd    :                   :         :           :                
 VCC                          : P11       : power  :                   : 1.1V    :           :                
 RESERVED_INPUT               : P12       :        :                   :         : 3B        :                

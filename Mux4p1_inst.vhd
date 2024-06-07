@@ -1,8 +1,8 @@
 Mux4p1_inst : Mux4p1 PORT MAP (
-		data0x	 => data0x_sig,
-		data1x	 => data1x_sig,
-		data2x	 => data2x_sig,
-		data3x	 => data3x_sig,
+		data0	 => data0_sig,
+		data1	 => data1_sig,
+		data2	 => data2_sig,
+		data3	 => data3_sig,
 		sel	 => sel_sig,
 		result	 => result_sig
 	);

@@ -1,0 +1,128 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2021  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 192 400)
+	(text "fullSubtractor4" (rect 5 0 94 19)(font "Intel Clear" (font_size 8)))
+	(text "inst" (rect 8 171 24 188)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "A0" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "A0" (rect 21 27 37 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "B0" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "B0" (rect 21 187 37 206)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 192)(pt 16 192))
+	)
+	(port
+		(pt 72 0)
+		(input)
+		(text "Cin" (rect 0 0 18 19)(font "Intel Clear" (font_size 8)))
+		(text "Cin" (rect 64 25 83 43)(font "Intel Clear" (font_size 8))(vertical))
+		(line (pt 72 0)(pt 72 16))
+	)
+	(port
+		(pt 0 72)
+		(input)
+		(text "A1" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "A1" (rect 21 67 37 86)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 72)(pt 16 72))
+	)
+	(port
+		(pt 0 232)
+		(input)
+		(text "B1" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "B1" (rect 21 227 37 246)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 232)(pt 16 232))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "A2" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "A2" (rect 21 107 37 126)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 0 272)
+		(input)
+		(text "B2" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "B2" (rect 21 267 37 286)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 272)(pt 16 272))
+	)
+	(port
+		(pt 0 152)
+		(input)
+		(text "A3" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "A3" (rect 21 147 37 166)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 152)(pt 16 152))
+	)
+	(port
+		(pt 0 312)
+		(input)
+		(text "B3" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "B3" (rect 21 307 37 326)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 312)(pt 16 312))
+	)
+	(port
+		(pt 128 96)
+		(output)
+		(text "R0" (rect 32 0 48 19)(font "Intel Clear" (font_size 8)))
+		(text "R0" (rect 91 91 107 110)(font "Intel Clear" (font_size 8)))
+		(line (pt 128 96)(pt 112 96))
+	)
+	(port
+		(pt 128 136)
+		(output)
+		(text "R1" (rect 32 0 48 19)(font "Intel Clear" (font_size 8)))
+		(text "R1" (rect 91 131 107 150)(font "Intel Clear" (font_size 8)))
+		(line (pt 128 136)(pt 112 136))
+	)
+	(port
+		(pt 128 176)
+		(output)
+		(text "R2" (rect 32 0 48 19)(font "Intel Clear" (font_size 8)))
+		(text "R2" (rect 91 171 107 190)(font "Intel Clear" (font_size 8)))
+		(line (pt 128 176)(pt 112 176))
+	)
+	(port
+		(pt 128 216)
+		(output)
+		(text "R3" (rect 32 0 48 19)(font "Intel Clear" (font_size 8)))
+		(text "R3" (rect 91 211 107 230)(font "Intel Clear" (font_size 8)))
+		(line (pt 128 216)(pt 112 216))
+	)
+	(port
+		(pt 64 336)
+		(output)
+		(text "Cout" (rect 32 0 59 19)(font "Intel Clear" (font_size 8)))
+		(text "Cout" (rect 56 285 75 312)(font "Intel Clear" (font_size 8))(vertical))
+		(line (pt 64 336)(pt 64 320))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 320))
+	)
+)

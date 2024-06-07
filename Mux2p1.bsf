@@ -1,0 +1,69 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2021  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 56 56 152 168)
+	(text "Mux2p1" (rect 26 8 80 24)(font "Arial" (font_size 10)))
+	(text "inst" (rect 16 72 33 84)(font "Arial" ))
+	(port
+		(pt 0 40)
+		(input)
+		(text "data1" (rect 0 8 31 22)(font "Arial" (font_size 8)))
+		(text "data1" (rect 4 26 35 40)(font "Arial" (font_size 8)))
+		(line (pt 0 40)(pt 32 40))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "data0" (rect 0 8 31 22)(font "Arial" (font_size 8)))
+		(text "data0" (rect 4 66 35 80)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 32 80))
+	)
+	(port
+		(pt 48 112)
+		(input)
+		(text "sel" (rect 8 32 22 48)(font "Arial" (font_size 8))(vertical))
+		(text "sel" (rect 40 80 54 96)(font "Arial" (font_size 8))(vertical))
+		(line (pt 48 112)(pt 48 100))
+	)
+	(port
+		(pt 96 64)
+		(output)
+		(text "result" (rect 16 8 47 22)(font "Arial" (font_size 8)))
+		(text "result" (rect 66 50 97 64)(font "Arial" (font_size 8)))
+		(line (pt 96 64)(pt 64 64))
+	)
+	(drawing
+		(line (pt 40 32)(pt 40 80))
+		(line (pt 40 32)(pt 56 40))
+		(line (pt 40 80)(pt 56 72))
+		(line (pt 56 40)(pt 56 72))
+		(line (pt 8 8)(pt 90 8))
+		(line (pt 8 112)(pt 90 112))
+		(line (pt 8 8)(pt 8 8))
+		(line (pt 8 8)(pt 8 8))
+		(line (pt 8 8)(pt 8 8))
+		(line (pt 8 8)(pt 8 8))
+		(line (pt 8 8)(pt 8 112))
+		(line (pt 88 8)(pt 88 112))
+	)
+)
